@@ -1,0 +1,139 @@
+#left-list{
+    margin-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.col-md-9{
+    margin: 10px 0;
+    padding-right: 0px;
+    padding-left: 10px;
+}
+
+.post {
+    padding: 10px 15px 10px 15px;
+}
+
+.post-head {
+    text-align: center;
+}
+
+.post .post-head .post-meta {
+    color: #959595;
+    margin: 16px 0 0px;
+}
+.post .post-head .post-meta span {
+    white-space: nowrap;
+}
+
+.post .post-content {
+    margin: 25px 0;
+}
+
+.num{
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ddd;
+    border-left: none;
+    text-align: center;
+    color: #428bca;
+    display: inline-block;
+    padding: 0 2px;
+}
+
+.next{
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ddd;
+    border-left: none;
+    text-align: center;
+    color: #428bca;
+    display: inline-block;
+    padding: 0 2px;
+}
+
+.prev{
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #428bca;
+    display: inline-block;
+    padding: 0 2px;
+}
+
+.first{
+    font-family: "微软雅黑", "黑体";
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ddd;
+    border-right: none;
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #428bca;
+    display: inline-block;
+    padding: 0 2px;
+}
+
+.end{
+    font-family: "微软雅黑", "黑体";
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ddd;
+    border-left: none;
+    background-color: #ffffff;
+    text-align: center;
+    color: #428bca;
+    display: inline-block;
+    padding: 0 2px;
+
+}
+
+.rows{
+    display: none;
+
+}
+
+.num:hover{
+    background-color: #f5f5f5;
+}
+
+.first:hover{
+    background-color: #f5f5f5;
+}
+
+.end:hover{
+    background-color: #f5f5f5;
+}
+
+.prev:hover{
+    background-color: #f5f5f5;
+}
+
+.next:hover{
+    background-color: #f5f5f5;
+}
+
+.current{
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #428bca;
+    background-color: #428bca;
+    text-align: center;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0 2px;
+}
+
+@media (max-width: 768px) {
+    .pull-right{
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+}
