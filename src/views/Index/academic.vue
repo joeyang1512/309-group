@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import { getAca } from "@/api/api";
+import { getIndexInfo } from "@/api/api";
 export default {
   name: "xxx",
   data() {
@@ -46,6 +46,9 @@ export default {
   },
   created() {
     this.Aca();
+  },
+  computed: {
+    
   },
   mounted() {
     function fn1() {
@@ -60,7 +63,7 @@ export default {
   },
   methods: {
     Aca() {
-      getAca({ params: { what: "academic", _: Math.random() } }).then(data => {
+      getIndexInfo({ params: { what: "academic", _: Math.random() } }).then(data => {
         this.academic = data;
         for (let i = 0; i < this.academic.length; i++) {
           this.academic[i].href =

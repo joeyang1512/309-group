@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import { getOtherInfo, getEWM } from "@/api/api";
+import { getIndexInfo } from "@/api/api";
 export default {
   name: "xxx",
   data() {
@@ -49,14 +49,14 @@ export default {
   },
   methods: {
     otherInfo() {
-      getOtherInfo({ params: { what: "otherInfo", _: Math.random() } }).then(
+      getIndexInfo({ params: { what: "otherInfo", _: Math.random() } }).then(
         data => {
           this.info = data[0];
         }
       );
     },
     erweima(){
-      getEWM({params: {what: 'erweima'}}).then(data=>{
+      getIndexInfo({params: {what: 'erweima'}}).then(data=>{
         this.qrCode = require('@/assets/' + data[0].imgpath);        
       });
     }

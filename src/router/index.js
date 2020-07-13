@@ -13,11 +13,12 @@ const routes = [{
             import ( /* webpackChunkName: "about" */ '@/views/Index/index.vue'),
     },
     {
-        path:'/lab',
-        name:'lab',
-        meta:{
-            til:'实验室概况',
-            component:()=>import('@/views/lab.vue')
+        path: '/lab',
+        name: 'lab',
+        meta: {
+            til: '实验室概况',
+            component: () =>
+                import ('@/views/lab.vue')
         }
     }
     // {
@@ -32,7 +33,7 @@ const routes = [{
 ]
 
 const router = new VueRouter({
-    mode: 'history',
+    mode: 'hash',
     base: process.env.BASE_URL,
     routes
 })

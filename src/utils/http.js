@@ -2,6 +2,8 @@ import axios from 'axios';
 import Qs from 'qs';
 
 let http = axios.create({
+    // 如果有proxy代理就不能有baseURL
+    baseURL: 'http://127.0.0.1:80',
     headers: {
         "Content-Type": "application/x-www-form-urlencoded",
     },

@@ -48,7 +48,7 @@
 
 <script>
 // @ is an alias to /src
-import { getPaper, getInfo } from "@/api/api";
+import { getIndexInfo } from "@/api/api";
 export default {
   name: "xxx",
   data() {
@@ -64,7 +64,7 @@ export default {
   },
   methods: {
     engPaper() {
-        getPaper({ params: { what: "paper", _: Math.random() } }).then(data => {
+        getIndexInfo({ params: { what: "paper", _: Math.random() } }).then(data => {
             for(let i = 0; i < data.length; i++) {
                 data[i].href = 'http://localhost/309/index.php/Writings/details/cid/' + data[i].id;
                 if(data[i].type === "0") {
@@ -76,7 +76,7 @@ export default {
         });
     },
     info() {
-        getInfo({ params: { what: "info", _: Math.random()} }).then(data => {
+        getIndexInfo({ params: { what: "info", _: Math.random()} }).then(data => {
              this.infoList = data;
              for(let i = 0; i < data.length; i++){
                  this.infoList[i].href = 'http://localhost/309/index.php/Affairs/details/cid/' + data[i].infoid;

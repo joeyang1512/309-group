@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import { getBanners } from "@/api/api";
+import { getIndexInfo } from "@/api/api";
 export default {
   name: "xxx",
   data() {
@@ -70,7 +70,7 @@ export default {
   },
   methods: {
     banners() {
-      getBanners({ params: { what: "lunbo", _: Math.random() } }).then(data => {
+      getIndexInfo({ params: { what: "lunbo", _: Math.random() } }).then(data => {
         for (let i = 0; i < data.length; i++) {
           if (data[i].type === '10'){
               this.bannerFirst = data[i];
