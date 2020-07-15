@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-      <my-left></my-left>
-      <router-view></router-view>
+    <my-left></my-left>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
     return {};
   },
   components: {
-    "my-left": left,
+    "my-left": left
   }
 };
 </script>
