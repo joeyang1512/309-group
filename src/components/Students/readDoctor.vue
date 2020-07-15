@@ -18,7 +18,7 @@
         </h5>
       </div>
     </div>
-    <my-page :total = 'total' :pageSize = 'pageSize'></my-page>
+    <my-page :total = 'total' :pageSize = 'pageSize' @func = 'fn'></my-page>
   </div>
 </template>
 
@@ -40,9 +40,6 @@ export default {
   methods: {
     getDoctor() {
       this.fn(1);
-    },
-    handleCurrentChange(e) {
-      this.fn(e);
     },
     fn(pid) {
       getReadDoctor({ params: { pid: pid } }).then(data => {

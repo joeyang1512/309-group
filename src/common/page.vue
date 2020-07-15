@@ -34,13 +34,12 @@ export default {
   },
   methods: {
     handleCurrentChange(e) {
-      this.$parent.handleCurrentChange(e);
+        this.$emit('func', e);
     }
   },
   components: {}
 };
 
-//当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
 </script>
 
 <style lang="less" scoped>

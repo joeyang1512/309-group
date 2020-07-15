@@ -16,28 +16,40 @@
           <!-- </foreach> -->
         </tbody>
       </table>
-
-      <nav class="pull-right" style="margin-bottom: 10px">2</nav>
+      <my-page :total="total" :pageSize="pageSize" @func="fn"></my-page>
     </div>
   </div>
 </template>
 <script>
 import { getInform } from "@/api/api";
+import page from "@/common/page";
 // @ is an alias to /src
 export default {
   name: "informContent",
   data() {
     return {
-      inform: []
+      inform: [],
+      total: 0,
+      pageSize: 1
     };
   },
-  components: {},
-  methods: {},
+  components: {
+    "my-page": page
+  },
+  methods: {
+    getInfo(){
+      this.fn(1);
+    },
+    fn(pid) {
+      getInform({ params: { pid: pid } }).then(data => {
+        this.inform = data;
+        this.total = Number(this.inform[0]);
+        this.inform.shift();
+      });
+    }
+  },
   created() {
-    getInform().then(data => {
-      this.inform = data;
-    //   console.log(data);
-    });
+    this.getInfo();
   }
 };
 </script>
