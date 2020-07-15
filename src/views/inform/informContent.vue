@@ -30,7 +30,7 @@ export default {
     return {
       inform: [],
       total: 0,
-      pageSize: 1
+      pageSize: 5
     };
   },
   components: {
