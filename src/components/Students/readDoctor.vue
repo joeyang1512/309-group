@@ -18,22 +18,13 @@
         </h5>
       </div>
     </div>
-    <nav class="pull-right" style="margin-bottom: 10px">
-      <el-pagination
-        background
-        layout="prev, pager, next"
-        :total="total"
-        @size-change="handleSizeChange"
-        @current-change="handleCurrentChange"
-        :current-page="currentPage"
-        :page-size="pageSize"
-      ></el-pagination>
-    </nav>
+    <my-page :total = 'total' :pageSize = 'pageSize'></my-page>
   </div>
 </template>
 
 <script>
 import { getReadDoctor } from "@/api/api";
+import page from '@/common/page';
 export default {
   name: "xxx",
   data() {
@@ -45,12 +36,7 @@ export default {
   },
   created() {
     this.getDoctor();
-    this.handleCurrentChange();
   },
-  // beforeUpdate() {
-  //   this.total = Number(this.readDoctor[0]);
-  //   this.readDoctor.shift();
-  // },
   methods: {
     getDoctor() {
       this.fn(1);
@@ -63,7 +49,6 @@ export default {
         this.readDoctor = data;
         this.total = Number(this.readDoctor[0]);
         this.readDoctor.shift();
-        console.log(this.readDoctor);
         for (let i = 0; i < this.readDoctor.length; i++) {
           this.readDoctor[i].imgpath = require("@/assets/" +
             this.readDoctor[i].imgpath);
@@ -74,7 +59,9 @@ export default {
       });
     }
   },
-  components: {}
+  components: {
+    'my-page': page
+  }
 };
 </script>
 
