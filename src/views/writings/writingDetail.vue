@@ -30,7 +30,7 @@
           </tbody>
         </table>
 
-        <nav class="pull-right" style="margin-bottom: 10px">{$page}</nav>
+        <!-- <nav class="pull-right" style="margin-bottom: 10px">{$page}</nav> -->
       </div>
 
       <!-- 英文论文 -->
@@ -48,7 +48,7 @@
           </tbody>
         </table>
 
-        <nav class="pull-right" style="margin-bottom: 10px">{$page}</nav>
+        <!-- <nav class="pull-right" style="margin-bottom: 10px">{$page}</nav> -->
       </div>
 
       <!-- 授权、申请专利 -->
@@ -75,7 +75,7 @@
             <!-- </foreach> -->
           </tbody>
         </table>
-        <nav class="pull-right" style="margin-bottom: 10px">1</nav>
+        <!-- <nav class="pull-right" style="margin-bottom: 10px">1</nav> -->
       </div>
     </div>
     <!--end-->

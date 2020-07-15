@@ -29,7 +29,7 @@
           </tbody>
         </table>
 
-        <nav class="pull-right" style="margin-bottom: 10px">2</nav>
+        <!-- <nav class="pull-right" style="margin-bottom: 10px">2</nav> -->
       </div>
     </div>
     <!--end-->

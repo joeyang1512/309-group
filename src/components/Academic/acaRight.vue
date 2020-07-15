@@ -17,9 +17,9 @@
 					</tbody>
 				</table>
 
-				<nav class="pull-right" style="margin-bottom: 10px">
+				<!-- <nav class="pull-right" style="margin-bottom: 10px">
 					{$page}
-				</nav>
+				</nav> -->
 			</div>
 		</div>
 
@@ -40,9 +40,9 @@
 					</tbody>
 				</table>
 
-				<nav class="pull-right" style="margin-bottom: 10px">
+				<!-- <nav class="pull-right" style="margin-bottom: 10px">
 					{$page}
-				</nav>
+				</nav> -->
 			</div>
 		</div>
 	</div>
