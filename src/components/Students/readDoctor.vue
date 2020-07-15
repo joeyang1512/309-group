@@ -14,17 +14,17 @@
       >
         <img :src="item.imgpath" class="img-thumbnail" style="width: 80%" />
         <h5>
-          <a :href="item.href">{{item.name}}</a>
+          <router-link :to="{path:'/Students/detail',query:{cid:item.id}}">{{item.name}}</router-link>
         </h5>
       </div>
     </div>
-    <my-page :total = 'total' :pageSize = 'pageSize' @func = 'fn'></my-page>
+    <my-page :total="total" :pageSize="pageSize" @func="fn"></my-page>
   </div>
 </template>
 
 <script>
 import { getReadDoctor } from "@/api/api";
-import page from '@/common/page';
+import page from "@/common/page";
 export default {
   name: "xxx",
   data() {
@@ -49,15 +49,12 @@ export default {
         for (let i = 0; i < this.readDoctor.length; i++) {
           this.readDoctor[i].imgpath = require("@/assets/" +
             this.readDoctor[i].imgpath);
-          this.readDoctor[i].href =
-            "http://localhost:8081/#/Students/detail?cid=" +
-            this.readDoctor[i].id;
         }
       });
     }
   },
   components: {
-    'my-page': page
+    "my-page": page
   }
 };
 </script>

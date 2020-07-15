@@ -6,10 +6,17 @@
         <li>研究生培养</li>
         <li>毕业硕士</li>
       </ul>
-      <div class="col-md-4" style="text-align: center" v-for="(item, index) in gradMasters" :key='index'>
-        <img :src='item.imgpath' class="img-thumbnail" style="width: 80%" />
+      <div
+        class="col-md-4"
+        style="text-align: center"
+        v-for="(item, index) in gradMasters"
+        :key="index"
+      >
+        <img :src="item.imgpath" class="img-thumbnail" style="width: 80%" />
         <h5>
-          <a :href="item.href">{{item.name}}</a>
+          <router-link
+            :to="{path:'/Students/detail',query:{cid:item.id}}"
+          >{{item.name}}</router-link>
         </h5>
       </div>
     </div>
@@ -22,21 +29,21 @@ export default {
   name: "xxx",
   data() {
     return {
-       gradMasters: [],
+      gradMasters: []
     };
   },
-  created(){
+  created() {
     this.gradMaster();
   },
-  methods:{
-    gradMaster(){
-      getGradMaster().then(data=>{
+  methods: {
+    gradMaster() {
+      getGradMaster().then(data => {
         this.gradMasters = data;
-        for(let i = 0; i < data.length; i++){
-          this.gradMasters[i].imgpath = require('@/assets/' + this.gradMasters[i].imgpath);
-          this.gradMasters[i].href = 'http://localhost:8081/#/Students/detail?cid=' + this.gradMasters[i].id;
+        for (let i = 0; i < data.length; i++) {
+          this.gradMasters[i].imgpath = require("@/assets/" +
+            this.gradMasters[i].imgpath);
         }
-      })
+      });
     }
   },
   components: {}

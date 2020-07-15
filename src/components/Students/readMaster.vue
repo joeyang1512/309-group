@@ -14,7 +14,7 @@
       >
         <img :src="item.imgpath" class="img-thumbnail" style="width: 80%" />
         <h5>
-          <a :href="item.href">{{item.name}}</a>
+          <router-link :to="{path:'/Students/detail',query:{cid:item.id}}">{{item.name}}</router-link>
         </h5>
       </div>
     </div>
@@ -40,9 +40,6 @@ export default {
         for (let i = 0; i < data.length; i++) {
           this.readMasters[i].imgpath = require("@/assets/" +
             this.readMasters[i].imgpath);
-          this.readMasters[i].href =
-            "http://localhost:8081/#/Students/detail?cid=" +
-            this.readMasters[i].id;
         }
       });
     }
