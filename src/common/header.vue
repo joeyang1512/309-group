@@ -30,15 +30,15 @@
               <!-- <a href="http://localhost/309/index.php?s=Lab/index">实验室概况</a> -->
             </li>
             <li>
-              <router-link to="/">新闻动态</router-link>
+              <router-link to="/news">新闻动态</router-link>
               <!-- <a href="http://localhost/309/index.php?s=News/index">新闻动态</a> -->
             </li>
             <li>
-              <router-link to="/">师资力量</router-link>
+              <router-link to="/faculty">师资力量</router-link>
               <!-- <a href="http://localhost/309/index.php?s=Teachers/index">师资力量</a> -->
             </li>
             <li>
-              <router-link to="/">研究生培养</router-link>
+              <router-link to="/students">研究生培养</router-link>
               <!-- <a href="http://localhost/309/index.php?s=Students/index">研究生培养</a> -->
             </li>
             <li>
@@ -50,7 +50,7 @@
               <!-- <a href="http://localhost/309/index.php?s=Writings/index">论著专利</a> -->
             </li>
             <li>
-              <router-link to="/">学术交流</router-link>
+              <router-link to="/academic">学术交流</router-link>
               <!-- <a href="http://localhost/309/index.php?s=Academic/index">学术交流</a> -->
             </li>
             <li>
