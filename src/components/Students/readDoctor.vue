@@ -6,40 +6,59 @@
         <li>研究生培养</li>
         <li>在读博士</li>
       </ul>
-      <div class="col-md-4" style="text-align: center" v-for="(item, index) in readDoctor" :key='index'>
-        <img :src='item.imgpath' class="img-thumbnail" style="width: 80%" />
+      <div
+        class="col-md-4"
+        style="text-align: center"
+        v-for="(item, index) in readDoctor"
+        :key="index"
+      >
+        <img :src="item.imgpath" class="img-thumbnail" style="width: 80%" />
         <h5>
           <a :href="item.href">{{item.name}}</a>
         </h5>
       </div>
     </div>
+    <my-page :total = 'total' :pageSize = 'pageSize' @func = 'fn'></my-page>
   </div>
 </template>
 
 <script>
 import { getReadDoctor } from "@/api/api";
+import page from '@/common/page';
 export default {
   name: "xxx",
   data() {
     return {
-       readDoctor: [],
+      readDoctor: [],
+      total: 0,
+      pageSize: 3
     };
   },
-  created(){
+  created() {
     this.getDoctor();
   },
-  methods:{
-    getDoctor(){
-      getReadDoctor().then(data=>{
+  methods: {
+    getDoctor() {
+      this.fn(1);
+    },
+    fn(pid) {
+      getReadDoctor({ params: { pid: pid } }).then(data => {
         this.readDoctor = data;
-        for(let i = 0; i < data.length; i++){
-          this.readDoctor[i].imgpath = require('@/assets/' + this.readDoctor[i].imgpath);
-          this.readDoctor[i].href = 'http://localhost:8081/#/Students/detail?cid=' + this.readDoctor[i].id;
+        this.total = Number(this.readDoctor[0]);
+        this.readDoctor.shift();
+        for (let i = 0; i < this.readDoctor.length; i++) {
+          this.readDoctor[i].imgpath = require("@/assets/" +
+            this.readDoctor[i].imgpath);
+          this.readDoctor[i].href =
+            "http://localhost:8081/#/Students/detail?cid=" +
+            this.readDoctor[i].id;
         }
-      })
+      });
     }
   },
-  components: {}
+  components: {
+    'my-page': page
+  }
 };
 </script>
 

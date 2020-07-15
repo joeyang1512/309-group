@@ -12,12 +12,6 @@
                 <a :href="item.href">{{item.name}}</a>
             </h5>
         </div>
-
-        <nav class="pull-right" style="margin-bottom: 10px">
-            <el-pagination background layout="prev, pager, next" :total="1000" @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page="currentPage" :page-size="pageSize">
-            </el-pagination>
-        </nav>
-    </div>
 </div>
 </template>
 
