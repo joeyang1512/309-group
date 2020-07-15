@@ -142,3 +142,9 @@
         margin-top: 20px;
     }
 }
+.breadcrumb{
+	background: url('./images/小导航.jpg');
+}
+#myTab{
+	background: url('./images/小导航.jpg');
+}
