@@ -1,5 +1,5 @@
 <template>
-	<div style="padding-top:20px;">
+	<div>
 		<div class="col-md-3" id="left-list">
 			<div class="list-group" style="text-align: center">
 				<router-link :to="{path:'/faculty' }" class="list-group-item">教授</router-link>
@@ -9,9 +9,7 @@
 		</div>
 
 		<!--右侧-->
-		<div class="col-md-9">
-			<router-view></router-view>
-		</div>
+		<router-view></router-view>
 		<!--end-->
 	</div>
 </template>

@@ -1,5 +1,6 @@
 <template>
 <div>
+        <div class="col-md-9">
     <ul class="breadcrumb">
         <li>309</li>
         <li>师资力量</li>
@@ -11,6 +12,7 @@
             <router-link :to="{path:'/professorDetails/id',query:{id:item.id,title:item.name}}">{{item.name}}</router-link>
         </h5>
     </div>
+        </div>
 </div>
 </template>
 
