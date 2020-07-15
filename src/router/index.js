@@ -132,7 +132,7 @@ const routes = [{
         component: () =>
             import ('@/views/sciFruits.vue'),
         children: [{
-                path: '/sciFruit/right1',
+                path: '/sciFruit/',
                 name: 'fruitRight1',
                 meta: {
                     til: '科研项目',
