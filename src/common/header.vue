@@ -27,41 +27,32 @@
             </li>
             <li>
               <router-link to="/lab">实验室概况</router-link>
-              <!-- <a href="http://localhost/309/index.php?s=Lab/index">实验室概况</a> -->
             </li>
             <li>
-              <router-link to="/">新闻动态</router-link>
-              <!-- <a href="http://localhost/309/index.php?s=News/index">新闻动态</a> -->
+              <router-link to="/news">新闻动态</router-link>
             </li>
             <li>
-              <router-link to="/">师资力量</router-link>
-              <!-- <a href="http://localhost/309/index.php?s=Teachers/index">师资力量</a> -->
+              <router-link to="/faculty">师资力量</router-link>
             </li>
             <li>
               <router-link to="/Students">研究生培养</router-link>
-              <!-- <a href="http://localhost/309/index.php?s=Students/index">研究生培养</a> -->
             </li>
             <li>
-              <router-link to="/">科研成果</router-link>
-              <!-- <a href="http://localhost/309/index.php?s=SciFruits/index">科研成果</a> -->
+              <router-link to="/sciFruit">科研成果</router-link>
             </li>
             <li>
-              <router-link to="/">论著专利</router-link>
-              <!-- <a href="http://localhost/309/index.php?s=Writings/index">论著专利</a> -->
+              <router-link to="/writings">论著专利</router-link>
             </li>
             <li>
-              <router-link to="/">学术交流</router-link>
-              <!-- <a href="http://localhost/309/index.php?s=Academic/index">学术交流</a> -->
+              <router-link to="/academic">学术交流</router-link>
             </li>
             <li>
-              <router-link to="/">通知公告</router-link>
-              <!-- <a href="http://localhost/309/index.php?s=Affairs/index">通知公告</a> -->
+              <router-link to="/inform">通知公告</router-link>
             </li>
           </ul>
         </div>
       </nav>
     </div>
-    <!-- <router-view></router-view> -->
   </div>
 </template>
 
