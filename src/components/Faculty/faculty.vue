@@ -21,7 +21,6 @@
 		name: 'faculty',
 		data() {
 			return {
-				
 			}
 		},
 		created() {

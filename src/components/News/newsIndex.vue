@@ -19,8 +19,6 @@
                         {{item.content}}
                     </div>
                 </article>
-
-
             </main>
 	</div>
 
