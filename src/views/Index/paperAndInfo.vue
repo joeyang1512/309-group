@@ -2,7 +2,7 @@
   <div id="app">
     <div class="col-md-4">
       <div class="news">
-        <a href="http://localhost/309/index.php/Writings/chinapaper">中文论文</a>
+        <router-link to='/writings?tid=2'>中文论文</router-link>
       </div>
       <div
         style="width: 100%;height: 235px;background-color:#fff;border-top: 1px solid rgba(36, 139, 210, 0.9);"
@@ -17,7 +17,7 @@
     </div>
     <div class="col-md-4">
       <div class="news">
-        <a href="http://localhost/309/index.php/Writings/englishpaper">英文论文</a>
+        <router-link to='/writings?tid=3'>英文论文</router-link>
       </div>
       <div
         style="width: 100%;height: 235px;background-color:#fff;border-top: 1px solid rgba(36, 139, 210, 0.9);"
@@ -32,7 +32,7 @@
     </div>
     <div class="col-md-4">
       <div class="news" style="background: none;background-color: #f8b300">
-        <a style="color: white" href="http://localhost/309/index.php/Writings/englishpaper">通知公告</a>
+        <router-link style="color: white" to="/inform">通知公告</router-link>
       </div>
       <div style="width: 100%;height: 235px;background-color:#f8b300;border-top: 1px solid #f8b300">
         <ul class="inform" id="info">
@@ -49,6 +49,7 @@
 <script>
 // @ is an alias to /src
 import { getIndexInfo } from "@/api/api";
+import writingDetail from "../writings/writingDetail.vue";
 export default {
   name: "xxx",
   data() {
@@ -82,7 +83,11 @@ export default {
                  this.infoList[i].href = 'http://localhost/309/index.php/Affairs/details/cid/' + data[i].infoid;
              }             
         })
-     }
+     },
+    fn(id,ev) {
+      document.querySelectorAll('.list-group-item').forEach(item=>{item.className = 'list-group-item'});
+      this.id = id;
+    }
   },
   components: {}
 };

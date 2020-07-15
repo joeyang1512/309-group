@@ -68,7 +68,7 @@ const routes = [{
         path: '/inform',
         name: 'informContent',
         meta: {
-            til: '中南大学309课题组'
+            til: '通知公告'
         },
         component: () =>
             import ('@/views/inform/informContent.vue'),
@@ -85,9 +85,6 @@ const routes = [{
     {
         path: '/writings',
         name: 'wrintingIndex',
-        meta: {
-            til: '论著专利'
-        },
         component: () =>
             import ('@/views/writings/writing.vue'),
         children: [{
@@ -104,9 +101,6 @@ const routes = [{
     {
         path: '/indexDetail/:id',
         name: 'indexDetail',
-        meta: {
-            til: '矿物资源加工技术与设备'
-        },
         component: () =>
             import ('@/views/writings/indexDetail.vue')
     },

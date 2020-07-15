@@ -2,7 +2,7 @@
   <div id="app" v-cloak>
     <div class="col-md-12">
       <div class="news">
-        <a href="http://localhost/309/index.php/News/index">新闻动态</a>
+        <router-link to="/News">新闻动态</router-link>
       </div>
 
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">

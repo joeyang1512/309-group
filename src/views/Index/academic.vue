@@ -2,7 +2,7 @@
   <div id="app" v-cloak>
     <div class="col-md-12">
       <div class="news">
-        <a href="http://localhost/309/index.php/Academic/index">更多学术交流</a>
+        <router-link to="/academic">更多学术交流</router-link>
       </div>
       <div
         style="width: 100%;height: auto;border-top: 1px solid rgba(36, 139, 210, 0.9);"
