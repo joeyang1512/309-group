@@ -1,10 +1,14 @@
-#left-list{
+#left-list {
     margin-top: 10px;
     padding-left: 0px;
     padding-right: 0px;
 }
 
-.col-md-9{
+.breadcrumb {
+    background: url('./images/小导航.jpg');
+}
+
+.col-md-9 {
     margin: 10px 0;
     padding-right: 0px;
     padding-left: 10px;
@@ -22,6 +26,7 @@
     color: #959595;
     margin: 16px 0 0px;
 }
+
 .post .post-head .post-meta span {
     white-space: nowrap;
 }
@@ -30,7 +35,7 @@
     margin: 25px 0;
 }
 
-.num{
+.num {
     width: 36px;
     height: 36px;
     line-height: 36px;
@@ -42,7 +47,7 @@
     padding: 0 2px;
 }
 
-.next{
+.next {
     width: 36px;
     height: 36px;
     line-height: 36px;
@@ -54,7 +59,7 @@
     padding: 0 2px;
 }
 
-.prev{
+.prev {
     width: 36px;
     height: 36px;
     line-height: 36px;
@@ -65,7 +70,7 @@
     padding: 0 2px;
 }
 
-.first{
+.first {
     font-family: "微软雅黑", "黑体";
     width: 36px;
     height: 36px;
@@ -79,7 +84,7 @@
     padding: 0 2px;
 }
 
-.end{
+.end {
     font-family: "微软雅黑", "黑体";
     width: 36px;
     height: 36px;
@@ -91,35 +96,33 @@
     color: #428bca;
     display: inline-block;
     padding: 0 2px;
-
 }
 
-.rows{
+.rows {
     display: none;
-
 }
 
-.num:hover{
+.num:hover {
     background-color: #f5f5f5;
 }
 
-.first:hover{
+.first:hover {
     background-color: #f5f5f5;
 }
 
-.end:hover{
+.end:hover {
     background-color: #f5f5f5;
 }
 
-.prev:hover{
+.prev:hover {
     background-color: #f5f5f5;
 }
 
-.next:hover{
+.next:hover {
     background-color: #f5f5f5;
 }
 
-.current{
+.current {
     width: 36px;
     height: 36px;
     line-height: 36px;
@@ -132,7 +135,7 @@
 }
 
 @media (max-width: 768px) {
-    .pull-right{
+    .pull-right {
         margin-right: 10px;
         margin-top: 20px;
     }

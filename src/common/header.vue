@@ -38,7 +38,7 @@
               <!-- <a href="http://localhost/309/index.php?s=Teachers/index">师资力量</a> -->
             </li>
             <li>
-              <router-link to="/">研究生培养</router-link>
+              <router-link to="/Students">研究生培养</router-link>
               <!-- <a href="http://localhost/309/index.php?s=Students/index">研究生培养</a> -->
             </li>
             <li>
