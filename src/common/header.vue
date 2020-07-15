@@ -26,7 +26,7 @@
               
             </li>
             <li>
-              <router-link to="/lab">实验室概况</router-link>
+              <router-link to="/">实验室概况</router-link>
               <!-- <a href="http://localhost/309/index.php?s=Lab/index">实验室概况</a> -->
             </li>
             <li>
@@ -42,11 +42,11 @@
               <!-- <a href="http://localhost/309/index.php?s=Students/index">研究生培养</a> -->
             </li>
             <li>
-              <router-link to="/">科研成果</router-link>
+              <router-link to="/sciFruit">科研成果</router-link>
               <!-- <a href="http://localhost/309/index.php?s=SciFruits/index">科研成果</a> -->
             </li>
             <li>
-              <router-link to="/">论著专利</router-link>
+              <router-link to="/writings">论著专利</router-link>
               <!-- <a href="http://localhost/309/index.php?s=Writings/index">论著专利</a> -->
             </li>
             <li>
@@ -54,7 +54,7 @@
               <!-- <a href="http://localhost/309/index.php?s=Academic/index">学术交流</a> -->
             </li>
             <li>
-              <router-link to="/">通知公告</router-link>
+              <router-link to="/inform">通知公告</router-link>
               <!-- <a href="http://localhost/309/index.php?s=Affairs/index">通知公告</a> -->
             </li>
           </ul>

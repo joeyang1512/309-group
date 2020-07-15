@@ -9,7 +9,12 @@
     padding-right: 0px;
     padding-left: 10px;
 }
-
+#myTab{
+    background: url('./images/小导航.jpg');
+   }
+.breadcrumb{
+    background: url('./images/小导航.jpg');
+}
 .post {
     padding: 10px 15px 10px 15px;
 }
